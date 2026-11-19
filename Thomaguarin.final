@@ -1,0 +1,69 @@
+def introduction():
+    print("\n--- INTRODUCTION TO PROGRAMMING ---")
+    print("Programming is giving instructions to a computer.")
+    print("Python is a programming language used to create programs.")
+    print("\nExample:")
+    print('print("Hello, World!")')
+    print("Output: Hello, World!")
+
+
+def basic_syntax():
+    print("\n--- BASIC SYNTAX ---")
+    print("Python uses simple commands to perform tasks.")
+    print("\nExamples:")
+    print('name = "Alex"')
+    print("age = 16")
+    print('print("My name is", name)')
+    print("print(age)")
+
+
+def arithmetic():
+    print("\n--- ARITHMETIC OPERATORS ---")
+    print("Addition       (+)")
+    print("Subtraction    (-)")
+    print("Multiplication (*)")
+    print("Division       (/)")
+    
+    num1 = 10
+    num2 = 5
+
+    print("\nExample Calculation:")
+    print("10 + 5 =", num1 + num2)
+    print("10 - 5 =", num1 - num2)
+    print("10 * 5 =", num1 * num2)
+    print("10 / 5 =", num1 / num2)
+
+
+def main():
+    print("================================")
+    print("       MY PYTHON TUTORIAL")
+    print("================================")
+
+    while True:
+        print("\nSELECT A LESSON")
+        print("[1] Introduction to Programming")
+        print("[2] Basic Syntax")
+        print("[3] Arithmetic Operators")
+        print("[0] Exit Program")
+
+        choice = input("\nChoose your lesson: ")
+
+        if choice == "1":
+            introduction()
+
+        elif choice == "2":
+            basic_syntax()
+
+        elif choice == "3":
+            arithmetic()
+
+        elif choice == "0":
+            print("\nThank you for using my tutorial!")
+            print("Keep learning Python!")
+            break
+
+        else:
+            print("\nInvalid choice. Please try again.")
+
+
+main()
